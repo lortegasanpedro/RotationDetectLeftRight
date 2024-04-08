@@ -11,7 +11,7 @@ basic.forever(function () {
     //y = input.acceleration(Dimension.Y)
     //z = input.acceleration(Dimension.Z)
     //rollAbs = Math.abs(roll)
-    /*if (roll < 40 && roll > -40) {
+    if (x > 40 && x < -40) {
         basic.showLeds(`
             . # . # .
             . . . . .
@@ -19,7 +19,7 @@ basic.forever(function () {
             # . . . #
             . # # # .
             `)
-    } else {
+    } else if (x > 41 && x < -1023)  {
         basic.showLeds(`
             # . . . #
             . # . # .
@@ -27,7 +27,15 @@ basic.forever(function () {
             . # . # .
             # . . . #
             `)
-    }*/
+    } else {
+        basic.showLeds(`
+            . . . . .
+            . # . # .
+            . . # . .
+            . # . # .
+            . . . . .
+            `)
+    }
     // serial.writeLine("Pitch: " + pitch)
     //serial.writeLine("Pitch: " + pitch)
     //serial.writeLine("Roll: " + roll)
