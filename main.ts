@@ -11,7 +11,7 @@ basic.forever(function () {
     // y = input.acceleration(Dimension.Y)
     // z = input.acceleration(Dimension.Z)
     // rollAbs = Math.abs(roll)
-    if (x < 300 && x > -300) {
+    if (x < 200 && x > -200) {
         basic.showLeds(`
             . # . # .
             . . . . .
@@ -19,7 +19,7 @@ basic.forever(function () {
             # . . . #
             . # # # .
             `)
-    } else if (x > 301 && x < 1023) {
+    } else if (x > 201 && x < 1023) {
         basic.showLeds(`
             . . # . .
             . . . # .
@@ -27,7 +27,7 @@ basic.forever(function () {
             . . . # .
             . . # . .
             `)
-    } else if (x > -301 && x < -1023) {
+    } else { // if (x > -201 && x < -1023) {
         basic.showLeds(`
             . . # . .
             . # . . .
